@@ -2,47 +2,62 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles.css" />
         <title>Reservia</title>
     </head>
 
     <body>
         <div id="bloc_page">
+
             <header> 
-                <div id="logo">     <!--Logo du site Reservia-->
-                    <img src="images/reservia_logo.png" alt="Logo de Reservia">
+
+                <div id="title">
+
+                    <div id="logo">     <!--Logo du site Reservia-->
+                        <img src="images/reservia_logo.png" alt="Logo de Reservia">
+                    </div>
+
+                    <div id="menu">
+                        <nav>     <!--Menu du site-->
+                            <ul>
+                                <div id="hebergements"><li><a href="#">Hébergements</a></li></div>
+                                <div id="activites"><li><a href="#">Activités</a></li></div>
+                                <div id="inscription"><li><a href="#">S'inscrire</a></li></div>
+                            </ul>
+                        </nav>
+                    </div>
+
                 </div>
-                <nav>     <!--Menu du site-->
-                    <ul>
-                        <li><a href="#"></a>Hébergements</li>
-                        <li><a href="#"></a>Activités</li>
-                        <li><a href=""></a>S'inscrire</li>
-                    </ul>
-                </nav>
 
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h2>En plein centre ville ou en pleine nature</h2>   
+            
+                <div id="form">
+
+                    <div id="map-marker">
+                        <a href="#"><img src="images/map-marker.svg" alt=""></a>
+                    </div>
+
+                    <div id="search">
+                        <form id="search-form" method="post" action="traitement_search.php">     <!--Champs de saisie de type recherche-->
+                            <input type="search" name="text" id="text" value="Marseille,France">
+                         </form>
+                    </div>
+
+                    <div id="bouton">
+                        <input id="butt" type="submit" value="Rechercher">
+                    </div>
+                                
+                </div>
+
+                <div id="filters">
+
+
+                </div>
+
             </header>
-
-                <form method="post" action="traitement_search.php">     <!--Champs de saisie de type recherche-->
-                    <p>
-                        <label for="search"><img src="" alt="Logo position"></label>
-                        <input type="search" name="search" id="search">
-                        <input type="submit" value="Rechercher">
-                    </p>
-                </form>
-
-                <table>     <!--Tableau des filtres-->
-                    <tr>
-                        <th>Filtres</th>
-                        <td><a href="#"></a>Économique</td>
-                        <td><a href="#"></a>Familial</td>
-                        <td><a href="#"></a>Romantique</td>
-                        <td><a href="#"></a>Animaux autorisés</td>
-                    </tr>
-                </table>
     
-            <section> 
+            <section style="display:none"> 
                 <div id="hebergements_marseille">   <!--Section hébergements à Marseille-->
                     <h1>Hébergements à Marseille</h1>
                     <a href="#"><img src="images/auberge_la_cannebiere.jpg" alt="Auberge la Cannebière"></a>
@@ -54,7 +69,7 @@
                     <a href="#">Afficher plus</a>
                 </div>
 
-                <aside>     <!--Choix d'hébergements les plus populaires-->
+                <aside style="display:none">     <!--Choix d'hébergements les plus populaires-->
                     <h1>Les plus populaires</h1>
                     <p><img src="" alt="Icône profit"></p>
                     <a href="#"><img src="images/hotel_soleil_du_matin.jpg" alt="Hôtel Le soleil du matin"></a>
@@ -64,7 +79,7 @@
                 </aside>
             </section>
 
-            <section>
+            <section style="display:none">
                 <div id="activites_marseille"> <!--Section d'activités à Marseille-->
                     <h1>Activités à Marseille</h1>
                     <a href="#"><img src="images/vieux_port.jpg" alt="Vieux Port"></a>
@@ -76,7 +91,7 @@
                 </div>
             </section>
         
-            <footer> <!--Les informations de bas de page-->
+            <footer style="display:none"> <!--Les informations de bas de page-->
                 <div id="a_propos">
                     <h1>A propos</h1>
                     <a href="#">Fonctionnement du site</a>
