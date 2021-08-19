@@ -11,6 +11,7 @@
 
 body
 {
+    display: flex;
     font-family: 'Raleway', Arial, sans-serif;
     color: #181818;
 }
@@ -20,73 +21,49 @@ body
     margin: auto;
 }
 
-header
+header, section, aside
 {
     margin: 2em 2em;
 }
 
 #title
 {
-
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
 }
 
-#logo
-{
-    flex: 75%;
-}
-
-#logo img
+.title_logo img
 {
     width: 6em;
     height: 3em;
-    padding-top: 0.8em;
 }
 
-#menu
+.title_nav ul
 {
-    flex: 25%;
-    padding-top: 1.1em;
-}
-
-#hebergements
-{
-    order: 1;
-}
-#activites
-{
-    order: 2;
-}
-
-#inscription
-{
-    order: 3;
-}
-
-nav ul
-{
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
 }
 
-nav li
+.title_nav li
 {
     margin-left: 5.5em;
 }
 
-nav a
+.title_nav a
 {
     font-size: 1.1em;
     color: #0065FC;
     text-decoration: none;
 }
 
-nav a:hover
+.title_nav a:hover
 {
     color: #DEEBFF;
+    padding-top: 2em;
     border-top: 2px solid #0065FC;
 }
+
 
 header h1
 {
@@ -149,5 +126,22 @@ header h2
     border-bottom: 1px #0065FC solid;
     border-left: 1px #0065FC solid;
     border-radius: 0 12px 12px 0;
+}
+
+#filters
+{
+    display: flex;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+div[class*="filtres"]
+{
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #181818;
+    text-decoration: none;
+    border: 1px #F2F2F2 solid;
+    border-radius: 35px / 35px;
+    padding: 1em 1em 1em 1em;
 }
 
