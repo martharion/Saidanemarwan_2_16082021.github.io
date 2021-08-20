@@ -1,114 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
     <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css" />
-        <title>Reservia</title>
+        <title>Reservia-Hébergements</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://kit.fontawesome.com/e1888d9eb4.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div id="bloc_page">
 
-            <header> 
+        <header>
+            <nav class="banner flex">
+                <p><img src="images/reservia_logo.png" alt="logo" class="logo"></p>
+                <span class="menu">
+                    <a href="#hebergements" class="menu-link">Hébergements</a>
+                    <a href="#activites" class="menu-link">Activités</a>
+                </span>
+                <span class="sign"><a href="#" class="menu-sign">S'inscrire</a></span>
+            </nav>
 
-                <div id="title">
-                    <div class="title_logo"><img src="images/reservia_logo.png" alt="Logo de Reservia"></div>
-                    <div class="title_nav">
-                        <nav>     
-                            <ul>
-                                <div><li><a href="#">Hébergements</a></li></div>
-                                <div><li><a href="#">Activités</a></li></div>
-                                <div><li><a href="#">S'inscrire</a></li></div>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
+            <nav id="explore">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h2>En plein centre ville ou en pleine nature</h2>   
-            
-                <div id="form">
+                <p>En plein centre ville ou en pleine nature</p>
 
-                    <div id="map-marker">
-                        <a href="#"><img src="images/map-marker.svg" alt=""></a>
+                <form action="" method="post">
+                    <div class="search flex">
+                        <button type="button" name="search-icon" class="search-icon"><i class="fas fa-map-marker-alt"></i></button>
+                        <input type="search" name="search-field" class="search-field" value="Marseille, France">
+                        <button type="submit" name="search-button" class="search-button">Rechercher</button>
                     </div>
+                </form>
 
-                    <div id="search">
-                        <form id="search-form" method="post" action="traitement_search.php">     <!--Champs de saisie de type recherche-->
-                            <input type="search" name="text" id="text" value="Marseille,France">
-                         </form>
+                <div class="filters flex">
+                    <span class="label flex"><label>Filtres</label></span>
+                    <div class="filters-box flex">
+                        <span><i class="fas fa-money-bill-wave"></i><button class="filters-button">Économique</button></span>
+                        <span><i class="fas fa-child"></i><button class="filters-button">Familial</button></span>
+                        <span><i class="fas fa-heart"></i><button class="filters-button">Romantique</button></span>
+                        <span><i class="fas fa-dog"></i><button class="filters-button">Animaux autorisés</button></span>
                     </div>
-
-                    <div id="bouton">
-                        <input id="butt" type="submit" value="Rechercher">
-                    </div>
-                                
                 </div>
 
-                <div id="filters">
-                    <div><p>Filtres</p></div>
-                    <div class="filtres_economique"><a href=""></a>Économique</div>
-                    <div class="filtres_familial"><a href=""></a>Familial</div>
-                    <div class="filtres_romantique"><a href="">romantique</a></div>
-                    <div class="filtres_animaux"><a href="">Animaux autorisés</a></div>
+                <div class="information flex">
+                    <span><i class="fas fa-info"></i></span><p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
-
-            </header>
+            </nav>
+        </header>
     
-            <section style="display:none"> 
-                <div id="hebergements_marseille">   <!--Section hébergements à Marseille-->
-                    <h1>Hébergements à Marseille</h1>
-                    <a href="#"><img src="images/auberge_la_cannebiere.jpg" alt="Auberge la Cannebière"></a>
-                    <a href="#"><img src="images/hotel_du_port.jpg" alt="Hôtel du pport"></a>
-                    <a href="#"><img src="images/hotel_les_mouettes.jpg" alt="Hôtel Les mouettes"></a>
-                    <a href="#"><img src="images/hotel_de_la_mer.jpg" alt="Hôtel de la mer"></a>
-                    <a href="#"><img src="images/auberge_le_panier.jpg" alt="Auberge Le Panier"></a>
-                    <a href="#"><img src="images/hotel_chez_amina.jpg" alt="Hôtel chez Amina"></a>
-                    <a href="#">Afficher plus</a>
-                </div>
-
-                <aside style="display:none">     <!--Choix d'hébergements les plus populaires-->
-                    <h1>Les plus populaires</h1>
-                    <p><img src="" alt="Icône profit"></p>
-                    <a href="#"><img src="images/hotel_soleil_du_matin.jpg" alt="Hôtel Le soleil du matin"></a>
-                    <a href="#"><img src="images/au_coeur_de_l'eau.jpg" alt="Au coeur de l'eau Chambres d'hôtes"></a>
-                    <a href="#"><img src="images/hotel_tout_bleu_blanc.jpg" alt="Hôtel Tout bleu et Blanc"></a>
-
-                </aside>
+        <main id="hebergements" class="hebergements flex">  
+            <section> 
             </section>
 
-            <section style="display:none">
-                <div id="activites_marseille"> <!--Section d'activités à Marseille-->
-                    <h1>Activités à Marseille</h1>
-                    <a href="#"><img src="images/vieux_port.jpg" alt="Vieux Port"></a>
-                    <a href="#"><img src="images/fort_pomegues.jpg" alt="Fort de Pomègues"></a>
-                    <a href="#"><img src="images/iles_frioul.jpg" alt="Îles du Frioul"></a>
-                    <a href="#"><img src="images/parc_national_calanques.jpg" alt="Parc National des Calanques"></a>
-                    <a href="#"><img src="images/notre-dame_garde.jpg" alt="Notre-Dame-de-la-Garde"></a>
-                    <a href="#"><img src="images/parc_longchamp.jpg" alt="Parc Longchamp"></a>
-                </div>
-            </section>
+            <aside>
+            </aside>
+        </main>
+
+        <section>
+        </section>
+
+        <footer>
+        </footer>
         
-            <footer style="display:none"> <!--Les informations de bas de page-->
-                <div id="a_propos">
-                    <h1>A propos</h1>
-                    <a href="#">Fonctionnement du site</a>
-                    <a href="#">Conditions générales de vente</a>
-                    <a href="#">Données et confidentialité</a>
-                </div>
-
-                <div id="nos_hebergements">
-                    <h1>Nos hébergements</h1>
-                    <a href="#">Charte qualité</a>
-                    <a href="#">Soumettre votre hôtel</a>
-                </div>
-
-                <div id="assistance">
-                    <h1>Assistance</h1>
-                    <a href="#">Centre d'aide</a>
-                    <a href="#">Nous contacter</a>
-                </div>
-            </footer>
-        </div>
     </body>
 </html>

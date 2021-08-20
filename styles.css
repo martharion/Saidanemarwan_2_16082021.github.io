@@ -1,147 +1,171 @@
-/* Définition des polices personnalisées */
+/* Defining custom fonts */
 
 @font-face 
 {
     font-family: 'Raleway';
     src: url('polices/Raleway-Italic-VariableFont_wght.ttf');
     src: url('polices/Raleway-VariableFont_wght.ttf');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
+/* Desktop common */
+
 body
 {
-    display: flex;
-    font-family: 'Raleway', Arial, sans-serif;
-    color: #181818;
-}
-#bloc_page
-{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     width: 100%;
+    max-width: 1700px;
     margin: auto;
+    font-size: 16px;
 }
 
-header, section, aside
-{
-    margin: 2em 2em;
-}
-
-#title
+.flex
 {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 0.5em;
 }
 
-.title_logo img
+a
 {
-    width: 6em;
-    height: 3em;
-}
-
-.title_nav ul
-{
-    display: flex;
-    list-style-type: none;
-}
-
-.title_nav li
-{
-    margin-left: 5.5em;
-}
-
-.title_nav a
-{
-    font-size: 1.1em;
-    color: #0065FC;
+    color: #000000;
     text-decoration: none;
 }
 
-.title_nav a:hover
+/* Header */
+
+    /* Banner */
+
+.banner
 {
-    color: #DEEBFF;
-    padding-top: 2em;
-    border-top: 2px solid #0065FC;
-}
-
-
-header h1
-{
-    font-size: 1.4em;
-    font-weight: normal;
-}
-
-header h2
-{
-    font-size: 0.99em;
-    font-weight: normal;
-}
-
-#form
-{
-
-    display: flex;
     flex-direction: row;
-    margin-top: 1.4em;
-
+    width: 100%;
+    margin-top: 4%;
 }
 
-#map-marker
+.logo
 {
-    background-color: #F2F2F2;
-    width: 3.2em;
-    height: 2.95em;
-    border-color: #F2F2F2;
-    border-radius: 12px 0 0 12px;
+    width: 120px;
+    position: relative;
+    bottom: 25px;
 }
 
-#map-marker img
+.menu
 {
-    padding: 28% 25% 25% 30%;
-    width: 37%;
-    height: 37%;
+    width: 50%;
+    margin-left: 40%;
+    text-align: right;
 }
 
-#text
+.menu-link
 {
-    font-family: 'Raleway', Arial, sans-serif;
-    color: #181818;
-    width: 18em;
-    height: 3.5em;
-    border-top: 1px #F2F2F2 solid;
-    border-right: 1px #F2F2F2 solid;
-    border-bottom: 1px #F2F2F2 solid;
-    border-left: 1px #F2F2F2 solid;
+    padding: 0 50px 0 50px;
 }
 
-#butt
+.menu-sign
 {
-    width: 9.9em;
-    height: 3.5em;
-    font-family: 'Raleway', Arial, sans-serif;
+    padding-left: 50px;
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.menu-link:hover
+{
+    border-top: 3px solid #0065FC;
+    padding-top: 65px;
+    color: #0065FC;
+}
+
+    /* Explore */
+
+.search
+{
+    margin: 30px 0;
+}
+
+.search-icon, .search-field, .search-button
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    height: 45px;
+}
+
+.search-icon
+{
+    width: 45px;
+    border: 3px solid transparent;
+    border-radius: 15px 0 0 15px;
+}
+
+.search-field
+{
+    width: 220px;
+    padding-left: 10px;
+    border: 1px solid #F2F2F2;
+}
+
+.search-button
+{
+    width: 130px;
     color: #FFFFFF;
     background-color: #0065FC;
-    border-top: 1px #0065FC solid;
-    border-right: 1px #0065FC solid;
-    border-bottom: 1px #0065FC solid;
-    border-left: 1px #0065FC solid;
-    border-radius: 0 12px 12px 0;
+    border: 3px solid transparent;
+    border-radius: 0 15px 15px 0;
 }
 
-#filters
+    /* Filters */
+
+label, .filters-button
 {
-    display: flex;
-    margin-top: 2em;
-    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 40px;
 }
 
-div[class*="filtres"]
+label
 {
-    font-family: 'Raleway', Arial, sans-serif;
-    color: #181818;
-    text-decoration: none;
-    border: 1px #F2F2F2 solid;
-    border-radius: 35px / 35px;
-    padding: 1em 1em 1em 1em;
+    padding-top: 11px;
 }
 
+.filters-button
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    height: 45px;
+    padding: 0 20px 0 50px;
+    background-color: #FFFFFF;
+    border: 3px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.filters-button:hover
+{
+    color: #FFFFFF;
+    background-color: #DEEBFF;
+}
+
+.filters .fas
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    font-size: 16px;
+    position: absolute;
+    padding: 14px 14px;
+    border-radius: 100%;
+}
+
+    /* Information */
+
+.information
+{
+    margin: 20px 0;
+}
+
+.information .fas
+{
+    font-size: 12px;
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 6px 10px;
+    margin: 10px 15px 0 0;
+}
