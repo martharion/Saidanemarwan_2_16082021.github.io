@@ -187,14 +187,30 @@ label
 
 .lodge-box1
 {
-    width: 890px;
+    width: 60%;
     flex-direction: column;
     justify-content: flex-start;
 }
 
+.lodge-box2
+{
+    width: 30%;
+}
+
 .lodge-box1 h2
 {
-    margin: 30px 0 20px 45px;
+    margin: 30px 0 20px 100px;
+}
+
+.lodge-box2 h2
+{
+    margin: 30px 0 20px 70px;
+}
+
+.fa-chart-line
+{
+    font-size: 25px;
+    padding: 7% 0 0 24%;
 }
 
 figure
@@ -222,19 +238,18 @@ figcaption
     margin: 0;
     font-weight: bold;
     font-size: 15px;
-    padding-left: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .lodge-price
 {
-    margin: 5px 0 10px 10px
+    margin: 10px 0 0 10px;
 }
 
 .lodge-rate
 {
     color: #0065FC;
     font-size: 14px;
-    margin: 0 0 10px 12px;
 }
 
 .empty
@@ -246,18 +261,18 @@ figcaption
 {
     font-weight: bold;
     font-size: 20px;
-    margin: 0 0 20px 45px;
+    margin: 30px 0 30px 100px;
 }
 
     /* Section */
 
 .lodge-container1
 {
-    width: 850px;
+    width: 900px;
     height: 500px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 2% 2% 0 2%;
+    margin: 2% 2% 0 6%;
 }
 
 .lodge-img1
@@ -272,4 +287,42 @@ figcaption
     height: 120px;
     border: 4px #FFFFFF solid;
     border-radius: 15px 15px 0 0;
+    border-bottom: none;
+}
+
+.lodge-img1 .lodge-rate
+{
+    padding: 0;
+    margin: 5% 4%;
+}
+    /* Aside */
+
+.lodge-container2
+{
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 6%;
+}
+
+.lodge-img2
+{
+    display: flex;
+    width: 360px;
+    height: 153px;
+}
+
+.lodge-img2 img
+{
+    width: 140px;
+    height: 145px;
+    border: 4px #FFFFFF solid;
+    border-radius: 15px 0 0 15px;
+    border-right: none;
+}
+
+.lodge-img2 .lodge-rate
+{
+    padding: 0;
+    margin: 35% 4%;
 }
