@@ -15,6 +15,7 @@ body
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     width: 100%;
+    margin: 0;
     font-size: 16px;
 }
 
@@ -54,142 +55,77 @@ a
 
 /* Header */
 
+header
+{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
     /* Banner */
 
 .banner
 {
-    flex-direction: row;
-    width: 100%;
-    margin-top: 4%;
+    height: 32.5%;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner p
+{
+    border: 1px solid orange;
 }
 
 .logo
 {
-    width: 120px;
-    position: relative;
-    bottom: 25px;
+    width: 150px;
+}
+
+.sign
+{
+    border: 1px solid orange;
+    order: 2;
 }
 
 .menu
 {
-    width: 50%;
-    margin-left: 40%;
-    text-align: right;
+    border: 1px solid orange;
+    order: 1;
+    margin-left: 47%;
+}
+
+.sign-in
+{
+    border: 1px solid green;
+    font-weight: bold;
+    color: #0065FC;
 }
 
 .menu-link
 {
-    padding: 0 50px 0 50px;
-}
-
-.menu-sign
-{
-    padding-left: 50px;
-    font-weight: bold;
-    color: #0065FC;
+    border: 1px solid green;
+    padding: 0 80px 0 80px;
 }
 
 .menu-link:hover
 {
     border-top: 3px solid #0065FC;
-    padding-top: 65px;
+    padding-top: 70px;
     color: #0065FC;
 }
 
     /* Explore */
 
-.search
+#explore
 {
-    margin: 30px 0;
+    height: 62.5%;
+    border: 1px solid red;
 }
 
-.search-icon, .search-field, .search-button
-{
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    height: 45px;
-}
 
-.search-icon
-{
-    width: 45px;
-    border: 3px solid transparent;
-    border-radius: 15px 0 0 15px;
-}
-
-.search-field
-{
-    width: 220px;
-    padding-left: 10px;
-    border: 1px solid #F2F2F2;
-}
-
-.search-button
-{
-    width: 130px;
-    color: #FFFFFF;
-    background-color: #0065FC;
-    border: 3px solid transparent;
-    border-radius: 0 15px 15px 0;
-}
-
-    /* Filters */
-
-label, .filters-button
-{
-    font-size: 16px;
-    font-weight: bold;
-    margin-right: 50px;
-}
-
-label
-{
-    padding-top: 11px;
-}
-
-.filters-button
-{
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    height: 45px;
-    padding: 0 20px 0 50px;
-    background-color: #FFFFFF;
-    border: 3px solid #F2F2F2;
-    border-radius: 20px;
-}
-
-.filters-button:hover
-{
-    color: #FFFFFF;
-    background-color: #DEEBFF;
-}
-
-.filters .fas
-{
-    color: #0065FC;
-    background-color: #DEEBFF;
-    font-size: 16px;
-    position: absolute;
-    padding: 14px 14px;
-    border-radius: 100%;
-}
-
-    /* Information */
-
-.information
-{
-    margin: 20px 0;
-}
-
-.information .fas
-{
-    font-size: 12px;
-    color: #0065FC;
-    border: 2px solid #F2F2F2;
-    border-radius: 20px;
-    padding: 6px 10px;
-    margin: 10px 15px 0 0;
-}
 
 /* Main */
 
