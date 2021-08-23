@@ -32,15 +32,24 @@ body
 
 .title
 {
-    margin: 0;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 a
 {
     color: #000000;
     text-decoration: none;
+}
+
+.fa-star
+{
+    color: #0065FC;
+}
+
+.empty
+{
+    color: #F2F2F2;
 }
 
 /* Header */
@@ -215,6 +224,7 @@ label
 .lodge-box1 h2
 {
     border: 1px solid green;
+    margin-left: 5%;
 }
 
 .lodge-container1
@@ -243,26 +253,45 @@ label
     width: 310px;
     height: 140px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.lodge-img1 figcaption
+{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    height: 95px;
 }
 
 .lodge-img1 .title
 {
     border: 1px solid red;
+    margin: 0;
+    margin-top: 6px;
+    margin-left: 14px;
 }
 
-.lodge-price
+.lodge-img1 .lodge-price
 {
     border: 1px solid red;
+    margin: 0;
+    margin-top: 7px;
+    margin-left: 14px;
 }
 
-.lodge-rate
+.lodge-img1 .lodge-rate
 {
     border: 1px solid red;
+    margin-top: 10px;
+    margin-left: 14px;
 }
 
 .lodge-link
 {
     border: 1px solid green;
+    font-weight: bold;
+    margin-left: 5%;
 }
 
     /* Aside */
@@ -270,20 +299,85 @@ label
 .lodge-box2 h2
 {
     border: 1px solid green;
+    margin-left: 10%;
 }
 
 .fa-chart-line
 {
     border: 1px solid green;
+    font-size: 27px;
+    margin-left: 34%;
+    margin-top: 4%;
 }
 
 .lodge-container2
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 80%;
     height: 85%;
     border: 1px solid orange;
     margin: 0 10%;
 }
+
+.lodge-img2
+{
+    margin: 0;
+    border: 1px solid blue;
+    width: 100%;
+    height: 170px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.lodge-img2 img
+{
+    width: 40%;
+    height: 170px;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+.lodge-img2 figcaption
+{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 243px;
+} 
+
+.lodge-img2 .title
+{
+    border: 1px solid red;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 14px;
+}
+
+.lodge-img2 .lodge-price
+{
+    border: 1px solid red;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 14px;
+}
+
+.lodge-img2 .lodge-rate
+{
+    border: 1px solid red;
+    margin-top: 85px;
+    margin-left: 14px;
+}
+
+.lodge-img2 .lodge-rate2
+{
+    border: 1px solid green;
+    margin-top: 65px;
+    margin-left: 14px;
+}
+
 
 /* Section */
 
@@ -327,6 +421,7 @@ label
 {
     width: 370px;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
 }
 
 .act-img1
