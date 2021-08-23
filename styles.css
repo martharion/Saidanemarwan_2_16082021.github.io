@@ -15,8 +15,6 @@ body
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     width: 100%;
-    max-width: 1700px;
-    margin: auto;
     font-size: 16px;
 }
 
@@ -25,12 +23,18 @@ body
     display: flex;
 }
 
+.center
+{
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+}
+
 .title
 {
     margin: 0;
     font-weight: bold;
     font-size: 15px;
-    margin: 10px 0 0 10px;
 }
 
 a
@@ -182,22 +186,23 @@ label
 
 #lodging
 {
+    height: 700px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-top: 3%;
+    border: 1px solid black;
 }
 
 .lodge-box1, .lodge-box2
 {
-    height: 650px;
     background-color: #F2F2F2;
+    border: 1px solid red;
     border-radius: 20px;
+    padding-top: 1.5%;
 }
 
 .lodge-box1
 {
-    width: 60%;
-    flex-direction: column;
-    justify-content: flex-start;
+    width: 65%;
 }
 
 .lodge-box2
@@ -205,135 +210,87 @@ label
     width: 30%;
 }
 
+    /* Section */
+
 .lodge-box1 h2
 {
-    margin: 30px 0 20px 100px;
+    border: 1px solid green;
 }
-
-.lodge-box2 h2
-{
-    margin: 30px 0 20px 70px;
-}
-
-.fa-chart-line
-{
-    font-size: 25px;
-    padding: 7% 0 0 24%;
-}
-
-#lodging figure
-{
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 3px 1px 10px #949494;
-}
-
-figure img
-{
-    object-fit: cover;
-}
-
-figcaption
-{
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    border-radius: 0 0 20px 20px;
-}
-
-.lodge-price
-{
-    margin: 10px 0 0 10px;
-}
-
-.lodge-rate
-{
-    color: #0065FC;
-    font-size: 14px;
-}
-
-.empty
-{
-    color: #F2F2F2;
-}
-
-.lodge-link
-{
-    font-weight: bold;
-    font-size: 20px;
-    margin: 30px 0 30px 100px;
-}
-
-    /* Section */
 
 .lodge-container1
 {
-    width: 900px;
-    height: 500px;
+    width: 90%;
+    height: 80%;
+    border: 1px solid orange;
+    margin: 0 5%;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 2% 2% 0 6%;
 }
 
 .lodge-img1
 {
-    height: 150px;
     margin: 0;
+    border: 1px solid blue;
+    width: 310px;
+    height: 240px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
 }
 
 .lodge-img1 img
 {
-    width: 240px;
-    height: 120px;
-    border: 4px #FFFFFF solid;
-    border-radius: 15px 15px 0 0;
-    border-bottom: none;
+    width: 310px;
+    height: 140px;
+    border-radius: 20px 20px 0 0;
 }
 
-.lodge-img1 .lodge-rate
+.lodge-img1 .title
 {
-    padding: 0;
-    margin: 5% 4%;
+    border: 1px solid red;
 }
+
+.lodge-price
+{
+    border: 1px solid red;
+}
+
+.lodge-rate
+{
+    border: 1px solid red;
+}
+
+.lodge-link
+{
+    border: 1px solid green;
+}
+
     /* Aside */
+
+.lodge-box2 h2
+{
+    border: 1px solid green;
+}
+
+.fa-chart-line
+{
+    border: 1px solid green;
+}
 
 .lodge-container2
 {
-    height: 500px;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 0 0 6%;
-}
-
-.lodge-img2
-{
-    display: flex;
-    width: 360px;
-    height: 153px;
-}
-
-.lodge-img2 img
-{
-    width: 140px;
-    height: 145px;
-    border: 4px #FFFFFF solid;
-    border-radius: 15px 0 0 15px;
-    border-right: none;
-}
-
-.lodge-img2 .lodge-rate
-{
-    padding: 0;
-    margin: 35% 4%;
+    width: 80%;
+    height: 85%;
+    border: 1px solid orange;
+    margin: 0 10%;
 }
 
 /* Section */
 
 #activities
 {
-    width: 1700px;
     height: 700px;
-    margin: 3% 0;
+    margin-top: 3%;
     border: 1px solid black;
 }
 
@@ -341,6 +298,7 @@ figcaption
 {
     width: 100%;
     height: 700px;
+    border: 1px solid red;
 }
 
 .act-container
@@ -348,6 +306,7 @@ figcaption
     width: 100%;
     height: 630px;
     justify-content: space-between;
+    border: 1px solid orange;
 }
 
 .act-container figure
@@ -356,6 +315,12 @@ figcaption
     width: 370px;
     border-radius: 15px;
     box-shadow: 4px 4px 3px #F2F2F2;
+    border: 1px solid violet;
+}
+
+.act-container figure .title
+{
+    margin: 10px 0 0 10px;
 }
 
 .act-container figure img
@@ -380,6 +345,7 @@ figcaption
     width: 370px;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid green;
 }
 
 .act-img2
@@ -420,4 +386,36 @@ figcaption
 .act-img5 img
 {
     height: 87%;
+}
+
+/* Footer */
+
+footer
+{
+    width: 100%;
+    height: 300px;
+    background-color: #F2F2F2;
+    border: 1px solid black;
+    margin-top: 5%;
+}
+
+.footer
+{
+    border: 1px solid blue;
+}
+
+.footer ul
+{
+    list-style: none;
+    border: 1px solid violet;
+}
+
+.footer li
+{
+    border: 1px solid green;
+}
+
+.footer h3
+{
+    border: 1px solid red;
 }
