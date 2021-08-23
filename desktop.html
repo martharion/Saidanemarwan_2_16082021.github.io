@@ -28,7 +28,7 @@
 
                 <form action="" method="post">
                     <div class="search flex">
-                        <button type="button" name="search-icon" class="search-icon"><i class="fas fa-map-marker-alt"></i></button>
+                        <button name="search-icon" class="search-icon"><i class="fas fa-map-marker-alt"></i></button>
                         <input type="search" name="search-field" class="search-field" value="Marseille, France">
                         <button type="submit" name="search-button" class="search-button">Rechercher</button>
                     </div>
@@ -37,10 +37,12 @@
                 <div class="filters flex">
                     <span class="label"><label>Filtres</label></span>
                     <div class="filters-box flex">
-                        <span><i class="fas fa-money-bill-wave"></i><button class="filters-button">Économique</button></span>
-                        <span><i class="fas fa-child"></i><button class="filters-button">Familial</button></span>
-                        <span><i class="fas fa-heart"></i><button class="filters-button">Romantique</button></span>
-                        <span><i class="fas fa-dog"></i><button class="filters-button">Animaux autorisés</button></span>
+                        <form action="" method="post">
+                            <span><i class="fas fa-money-bill-wave"></i><button class="filters-button">Économique</button></span>
+                            <span><i class="fas fa-child"></i><button class="filters-button">Familial</button></span>
+                            <span><i class="fas fa-heart"></i><button class="filters-button">Romantique</button></span>
+                            <span><i class="fas fa-dog"></i><button class="filters-button">Animaux autorisés</button></span>
+                        </form>
                     </div>
                 </div>
 
