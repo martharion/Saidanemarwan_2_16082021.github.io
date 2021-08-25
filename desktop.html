@@ -8,17 +8,17 @@
         <script src="https://kit.fontawesome.com/e1888d9eb4.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body class="column">
 
         <header class="center">
 
             <nav class="banner flex">
                 <p><img src="images/reservia_logo.png" alt="logo" class="logo"></p>
-                <span class="sign"><a href="_blank" class="sign-in">S'inscrire</a></span>
                 <span class="menu">
                     <a href="#lodging" class="menu-link">Hébergements</a>
                     <a href="#activities" class="menu-link">Activités</a>
                 </span>
+                <span class="sign"><a href="#" class="sign-in">S'inscrire</a></span>
             </nav>
 
             <nav id="explore">
@@ -26,22 +26,23 @@
 
                 <div class="explore-p"><p>En plein centre ville ou en pleine nature</p></div>
 
-                <form action="" method="post">
-                    <div class="search flex">
+                <div class="search flex">
+                    <form action="" method="post">
                         <button name="search-icon" class="search-icon"><i class="fas fa-map-marker-alt"></i></button>
                         <input type="search" name="search-field" class="search-field" value="Marseille, France">
-                        <button type="submit" name="search-button" class="search-button">Rechercher</button>
-                    </div>
-                </form>
+                        <button type="submit" name="search-button" class="search-button1">Rechercher</button>
+                        <button type="submit" name="search-button" class="search-button2"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
 
                 <div class="filters flex">
                     <span class="label"><label>Filtres</label></span>
                     <div class="filters-box flex">
                         <form action="" method="post">
-                            <span><i class="fas fa-money-bill-wave"></i><button class="filters-button">Économique</button></span>
-                            <span><i class="fas fa-child"></i><button class="filters-button">Familial</button></span>
-                            <span><i class="fas fa-heart"></i><button class="filters-button">Romantique</button></span>
-                            <span><i class="fas fa-dog"></i><button class="filters-button">Animaux autorisés</button></span>
+                            <span class="button1"><i class="fas fa-money-bill-wave"></i><button class="filters-button">Économique</button></span>
+                            <span class="button2"><i class="fas fa-child"></i><button class="filters-button">Familial</button></span>
+                            <span class="button3"><i class="fas fa-heart"></i><button class="filters-button">Romantique</button></span>
+                            <span class="button4"><i class="fas fa-dog"></i><button class="filters-button">Animaux autorisés</button></span>
                         </form>
                     </div>
                 </div>
@@ -51,14 +52,14 @@
             
         </header>
     
-        <main id="lodging" class="flex center"> <!--black-->
+        <main id="lodging" class="flex center column"> <!--black-->
 
-            <section class="lodge-box1"> <!--red-->
+            <section class="lodge-box1 column"> <!--red-->
                 <h2>Hébergements à Marseille</h2>
 
-                <div class="lodge-container1 flex">
+                <div class="lodge-container1 flex column">
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="lodge-img1">
                             <img src="images/auberge_la_cannebiere.jpg" alt="photo">
                             <figcaption>
@@ -68,7 +69,7 @@
                         </figure>
                     </a>
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="lodge-img1">
                             <img src="images/hotel_du_port.jpg" alt="photo">
                             <figcaption>
@@ -78,7 +79,7 @@
                         </figure>
                     </a>
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="lodge-img1">
                             <img src="images/hotel_les_mouettes.jpg" alt="photo">
                             <figcaption>
@@ -88,7 +89,7 @@
                         </figure>
                     </a>
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="lodge-img1">
                             <img src="images/hotel_de_la_mer.jpg" alt="photo">
                             <figcaption>
@@ -98,7 +99,7 @@
                         </figure>
                     </a>
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="lodge-img1">
                             <img src="images/auberge_le_panier.jpg" alt="photo">
                             <figcaption>
@@ -108,7 +109,7 @@
                         </figure>
                     </a>
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="lodge-img1">
                             <img src="images/hotel_chez_amina.jpg" alt="photo">
                             <figcaption>
@@ -120,15 +121,15 @@
 
                 </div>
                 
-                <a href="_blank" class="lodge-link">Afficher plus</a>
+                <a href="#" class="lodge-link">Afficher plus</a>
             </section>
 
-            <aside class="lodge-box2"> <!--red-->
+            <aside class="lodge-box2 column"> <!--red-->
                 <span class="flex"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></span>
 
-                <div class="lodge-container2">
+                <div class="lodge-container2 column">
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="lodge-img2 flex">
                             <img src="images/hotel_soleil_du_matin.jpg" alt="photo">
                             <figcaption>
@@ -139,7 +140,7 @@
                         </figure>
                     </a>
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="lodge-img2 flex">
                             <img src="images/au_coeur_de_l'eau.jpg" alt="photo">
                             <figcaption>
@@ -150,7 +151,7 @@
                         </figure>
                     </a>
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="lodge-img2 flex">
                             <img src="images/hotel_tout_bleu_blanc.jpg" alt="photo">
                             <figcaption>
@@ -165,14 +166,14 @@
             </aside>
         </main>
 
-        <section id="activities" class="flex center"> <!--black-->
+        <section id="activities" class="flex center column"> <!--black-->
 
-            <div class="act-box"> <!--red-->
+            <div class="act-box column"> <!--red-->
                 <h2>Activités à Marseille</h2>
 
-                <div class="act-container flex"> <!--orange-->
+                <div class="act-container flex column"> <!--orange-->
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="act-img1">
                             <img src="images/vieux_port.jpg" alt="photo">
                             <figcaption><h3 class="title">Vieux port</h3></figcaption>
@@ -180,14 +181,14 @@
                     </a>
 
                     <div class="act-grp flex"> <!--green-->
-                        <a href="_blank">
+                        <a href="#">
                             <figure class="act-img2">
                                 <img src="images/fort_pomegues.jpg" alt="photo">
                                 <figcaption><h3 class="title">Fort de Pomègues</h3></figcaption>
                             </figure>
                         </a>
 
-                        <a href="_blank">
+                        <a href="#">
                             <figure class="act-img3">
                                 <img src="images/iles_frioul.jpg" alt="photo">
                                 <figcaption><h3 class="title">Îles du Frioul</h3></figcaption>
@@ -195,7 +196,7 @@
                         </a>
                     </div>
 
-                    <a href="_blank">
+                    <a href="#">
                         <figure class="act-img1">
                             <img src="images/parc_national_calanques.jpg" alt="photo">
                             <figcaption><h3 class="title">Parc National des Calanques</h3></figcaption>
@@ -203,14 +204,14 @@
                     </a>
 
                     <div class="act-grp flex"> <!--green-->
-                        <a href="_blank">
+                        <a href="#">
                             <figure class="act-img4">
                                 <img src="images/notre-dame_garde.jpg" alt="photo">
                                 <figcaption><h3 class="title">Notre-Dame-de-la-Garde</h3></figcaption>
                             </figure>
                         </a>
 
-                        <a href="_blank">
+                        <a href="#">
                             <figure class="act-img5">
                                 <img src="images/parc_longchamp.jpg" alt="photo">
                                 <figcaption><h3 class="title">Parc Longchamp</h3></figcaption>
@@ -222,32 +223,32 @@
             </div>
         </section>
 
-        <footer class="flex">
+        <footer class="flex column">
             <div class="footer">
                 <h3>A propos</h3>
                 <ul>
-                    <li><a href="_blank">Fonctionnement du site</a></li>
-                    <li><a href="_blank">Conditions générales de vente</a></li>
-                    <li><a href="_blank">Données et confidentialité</a></li>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
 
             <div class="footer">
                 <h3>Nos hébergements</h3>
                 <ul>
-                    <li><a href="_blank">Charte qualité</a></li>
-                    <li><a href="_blank">Soumettre votre hôtel</a></li>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
                 </ul>
             </div>
 
             <div class="footer">
                 <h3>Assistance</h3>
                 <ul>
-                    <li><a href="_blank">Centre d'aide</a></li>
-                    <li><a href="_blank">Nous contacter</a></li>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
                 </ul>
             </div>
-        </footer><br><br><br><br><br><br><br><br><br><br><br>
+        </footer>
 
     </body>
 </html>

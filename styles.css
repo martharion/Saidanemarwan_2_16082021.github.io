@@ -15,8 +15,9 @@ body
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     width: 100%;
-    margin: 0;
-    font-size: 17px;
+    max-width: 1440px;
+    margin: auto;
+    font-size: 16px;
 }
 
 .flex
@@ -27,7 +28,7 @@ body
 .center
 {
     width: 100%;
-    max-width: 1700px;
+    max-width: 1340px;
     margin: auto;
 }
 
@@ -57,7 +58,7 @@ a
 
 header
 {
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,39 +82,37 @@ header
 
 .logo
 {
-    width: 120px;
-}
-
-.sign
-{
-    border: 1px solid orange;
-    order: 2;
+    width: 110px;
 }
 
 .menu
 {
     border: 1px solid orange;
-    order: 1;
-    margin-left: 57%;
+    margin-left: 56%;
+}
+
+.sign
+{
+    border: 1px solid orange;
+}
+
+.menu-link
+{
+    border: 1px solid green;
+    padding: 0 35px 0 35px;
+}
+
+.menu-link:hover
+{
+    border-top: 3px solid #0065FC;
+    padding-top: 55px;
+    color: #0065FC;
 }
 
 .sign-in
 {
     border: 1px solid green;
     font-weight: bold;
-    color: #0065FC;
-}
-
-.menu-link
-{
-    border: 1px solid green;
-    padding: 0 52px 0 52px;
-}
-
-.menu-link:hover
-{
-    border-top: 3px solid #0065FC;
-    padding-top: 70px;
     color: #0065FC;
 }
 
@@ -131,24 +130,23 @@ header
 .explore-h1
 {
     border: 1px solid blue;
-    height: 40px;
+    height: 15%;
 }
 
 .explore-h1 h1
 {
-    font-size: 25px;
+    font-size: 22px;
     margin: 0;
 }
 
 .explore-p
 {
     border: 1px solid blue;
-    height: 35px;
+    height: 15%;
 }
 
 .explore-p p
 {
-    font-size: 18px;
     margin: 0;
 }
 
@@ -157,10 +155,17 @@ header
 .search
 {
     border: 1px solid blue;
-    height: 55px;
+    height: 17.5%;
 }
 
-.search-icon, .search-field, .search-button
+.search form
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.search-icon, .search-field, .search-button1
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -170,27 +175,35 @@ header
 .search-icon
 {
     border: 1px solid #F2F2F2;
-    height: 100%;
-    width: 55px;
+    width: 4%;
     border-radius: 15px 0 0 15px;
 }
 
 .search-field
 {
     border: 1px solid #F2F2F2;
-    height: 100%;
-    width: 267px;
+    width: 17%;
+    padding-left: 1%;
 }
 
-.search-button
+.search-button1
 {
-    border: 1px solid green;
-    height: 100%;
-    width: 137px;
+    border: 1px solid #0065FC;
+    width: 9%;
     color: #FFFFFF;
     background-color: #0065FC;
-    border: 3px solid transparent;
     border-radius: 0 15px 15px 0;
+}
+
+.search-button2
+{
+    display: none;
+    border: 1px solid #0065FC;
+    width: 3.5%;
+    color: #FFFFFF;
+    background-color: #0065FC;
+    border-radius: 15px;
+    font-size: 16px;
 }
 
     /* Filters */
@@ -198,46 +211,49 @@ header
 .filters
 {
     border: 1px solid blue;
-    height: 55px;
+    height: 17.5%;
 }
 
 label, .filters-button
 {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .label
 {
     border: 1px solid green;
-    width: 55px;
-    padding-top: 15px;
+    width: 4.5%;
+    padding-top: 0.80%;
 }
 
 .filters-box
 {
     border: 1px solid red;
-    width: 1100px;
-    margin-left: 50px;
+    width: 100%;
 }
 
 .filters-box form
 {
-    width: 1100px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
+.button1, .button2, .button3, .button4
+{
+    border: 1px solid orange;
+    margin-left: 4%;
+}
 
 .filters-button
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     height: 100%;
-    padding: 0 20px 0 65px;
     background-color: #FFFFFF;
     border: 3px solid #F2F2F2;
-    border-radius: 30px;
+    border-radius: 20px;
+    padding: 0 15px 0 45px;
 }
 
 .filters-button:hover
@@ -250,10 +266,10 @@ label, .filters-button
 {
     color: #0065FC;
     background-color: #DEEBFF;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 11px 11px;
+    border-radius: 20px;
     position: absolute;
-    padding: 17px 16px;
-    border-radius: 100%;
 }
 
     /* Information */
@@ -261,7 +277,7 @@ label, .filters-button
 .information
 {
     border: 1px solid blue;
-    height: 35px;
+    height: 15%;
     align-items: center;
 }
 
@@ -273,12 +289,6 @@ label, .filters-button
     border-radius: 20px;
     padding: 6px 10px;
     margin-right: 15px;
-}
-
-.information p
-{
-    font-size: 17px;
-
 }
 
 /* Main */
@@ -605,4 +615,26 @@ footer
 {
     border: 1px solid green;
     margin: 10px 0;
+}
+
+/* Responsive Design */
+
+@media all and (max-device-width: 425px)
+{
+    .column
+    {
+        flex-direction: column;
+        width: 100%;
+        max-width: 420px;
+        margin: auto;
+    }
+
+    body
+    {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    }
+
+/* Header */
+
 }
