@@ -621,28 +621,43 @@ footer
     margin-top: 50px;
 }
 
-.footer
+.footer1, .footer2, .footer3
 {
     border: 1px solid blue;
-    margin: 20px 200px 0 100px;
+    margin-top: 25px;
 }
 
-.footer h3
+.footer1 h3, .footer2 h3, .footer3 h3
 {
     border: 1px solid red;
 }
 
-.footer ul
+.footer1 ul, .footer2 ul, .footer3 ul
 {
     list-style: none;
     border: 1px solid violet;
     padding: 0;
 }
 
-.footer li
+.footer1 li, .footer2 li, .footer3 li
 {
     border: 1px solid green;
-    margin: 10px 0;
+    margin-bottom: 10px;
+}
+
+.footer1
+{
+    margin-left: 50px;
+}
+
+.footer2
+{
+    margin-left: 200px;
+}
+
+.footer3
+{
+    margin-left: 290px;
 }
 
 /* Responsive Design */
