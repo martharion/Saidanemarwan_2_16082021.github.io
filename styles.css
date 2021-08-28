@@ -11,11 +11,18 @@
 
 /* Desktop common */
 
-@media all and (min-device-width: 500px) 
+@media all and (min-device-width: 768px) 
 {
     .search-button2
     {   
        display: none;
+    }
+
+    .lodge-box1, .lodge-box2
+    {
+    background-color: #F2F2F2;
+    border: 1px solid red;
+    border-radius: 20px;
     }
 }
 
@@ -296,13 +303,6 @@ label, .filters-button
     justify-content: space-between;
     margin-top: 50px;
     border: 1px solid black;
-}
-
-.lodge-box1, .lodge-box2
-{
-    background-color: #F2F2F2;
-    border: 1px solid red;
-    border-radius: 20px;
 }
 
 .lodge-box1
@@ -659,72 +659,39 @@ footer
 
 /* Responsive Design */
 
-@media all and (max-device-width: 425px)
+@media all and (max-device-width: 767px)
 {
     /* Phone common */
 
     body
     {
-        font-family: 'Raleway', Arial, Helvetica, sans-serif;
-        width: 100%;
         max-width: 375px;
-        margin: auto;
         font-size: 18px;
     }
 
     .center
     {
-        width: 100%;
         max-width: 350px;
-        margin: auto;
     }
     
     .title
     {
-        font-weight: bold;
-        font-size: 16px;
+        font-size: 18px;
     }
     
-    a
-    {
-        color: #000000;
-        text-decoration: none;
-    }
-    
-    .fa-star
-    {
-        color: #0065FC;
-    }
-    
-    .empty
-    {
-        color: #F2F2F2;
-    }
-
     /* Header */
 
     header
     {
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border: 1px solid black;
+        height: 710px;
     }
 
         /* Banner */
 
     .banner
     {
-        height: 15%;
-        border: 1px solid red;
-        align-items: center;
+        height: 17.5%;
         flex-wrap: wrap;
-    }
-
-    .banner p
-    {
-        border: 1px solid orange;
     }
 
     .logo
@@ -736,37 +703,18 @@ footer
     {
         margin: 0;
         width: 350px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: 1px solid orange;
         order: 2;
     }
 
     .sign
     {
-        border: 1px solid orange;
         order: 1;
-    }
-
-    .menu-link
-    {
-        border: 1px solid green;
-        padding: 0 35px 0 35px;
     }
 
     .menu-link:hover
     {
-        border-top: 3px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
         padding-bottom: 10px;
-        color: #0065FC;
-    }
-
-    .sign-in
-    {
-        border: 1px solid green;
-        font-weight: bold;
-        color: #0065FC;
     }
 
         /* Explore */
@@ -774,79 +722,50 @@ footer
     #explore
     {
         height: 80%;
-        border: 1px solid red;
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
     }
 
     .explore-h1
     {
-        border: 1px solid blue;
         height: 10%;
     }
 
     .explore-h1 h1
     {
         font-size: 24px;
-        margin: 0;
     }
 
     .explore-p
     {
-        border: 1px solid blue;
         height: 7%;
-    }
-
-    .explore-p p
-    {
-        margin: 0;
     }
 
         /* Search */
 
     .search
     {
-        border: 1px solid blue;
         height: 10%;
-    }
-
-    .search form
-    {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
     }
 
     .search-icon, .search-field, .search-button1
     {
-        font-family: 'Raleway', Arial, Helvetica, sans-serif;
         font-size: 21px;
-        font-weight: bold;
     }
 
     .search-icon
     {
-        border: 1px solid #F2F2F2;
         width: 16%;
-        border-radius: 15px 0 0 15px;
     }
 
     .search-field
     {
-        border: 1px solid #F2F2F2;
         width: 70%;
-        padding-left: 1%;
+        padding-left: 2.5%;
     }
 
     .search-button1
     {
         display: none;
-        border: 1px solid #0065FC;
-        width: 9%;
-        color: #FFFFFF;
-        background-color: #0065FC;
-        border-radius: 0 15px 15px 0;
     }
 
     .search-button2
@@ -867,43 +786,27 @@ footer
     {
         flex-direction: column;
         flex-wrap: wrap;
-        border: 1px solid blue;
         height: 50%;
     }
 
     label, .filters-button
     {
         font-size: 18px;
-        font-weight: bold;
-    }
-
-    .label
-    {
-        border: 1px solid green;
-        width: 4.5%;
-        padding-top: 0.80%;
     }
 
     .filters-box
     {
-        flex-wrap: wrap;
-        border: 1px solid red;
-        width: 100%;
         height: 84.5%;
         margin-top: 15px;
     }
 
     .filters-box form
     {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
     }
 
     .button1, .button2, .button3, .button4
     {
-        border: 1px solid orange;
         height: 60px;
         margin: 0;
     }
@@ -915,54 +818,147 @@ footer
 
     .filters-button
     {
-        font-family: 'Raleway', Arial, Helvetica, sans-serif;
-        height: 100%;
-        background-color: #FFFFFF;
-        border: 3px solid #F2F2F2;
-        border-radius: 20px;
-        padding: 0 15px 0 45px;
         margin-left: 13px;
-    }
-
-    .filters-button:hover
-    {
-        color: #FFFFFF;
-        background-color: #DEEBFF;
     }
 
     .filters .fas
     {
-        color: #0065FC;
-        background-color: #DEEBFF;
-        font-size: 16px;
         padding: 20px 18px;
-        border-radius: 20px;
-        position: absolute;
     }
 
         /* Information */
 
     .information
     {
-        border: 1px solid blue;
         height: 8%;
     }
 
     .information p
     {
         font-size: 16px;
-        margin: 0;
     }
 
     .information .fas
     {
         font-size: 12px;
-        color: #0065FC;
-        border: 2px solid #F2F2F2;
-        border-radius: 20px;
         padding: 4px 8px;
         margin-left: 7px;
         margin-bottom: 8px;
+    }
+
+    /* Main */
+
+    #lodging
+    {
+        height: 2160px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .lodge-box2
+    {
+        background-color: #F2F2F2;
+    }
+
+    .lodge-box1
+    {
+        width: 100%;
+        height: 1405px;
+        order: 2;
+    }
+
+    .lodge-box2
+    {
+        width: 100%;
+        height: 705px;
+        order: 1;
+    }
+
+        /* Section */
+
+    .lodge-box1 h2
+    {
+        font-size: 22px;
+    }
+
+    .lodge-container1
+    {
+        width: 92%;
+        height: 95%;
+    }
+
+    .lodge-img1
+    {
+        width: 320px;
+        height: 200px;
+    }
+
+    .lodge-img1 img
+    {
+        width: 320px;
+        height: 110px;
+    }
+
+    .lodge-img1 figcaption
+    {
+        height: 90px;
+    }
+
+    .lodge-link
+    {
+        width: 110px;
+    }
+
+        /* Aside */
+
+    .lodge-box2 h2
+    {
+        font-size: 22px;
+        margin-top: 5%;
+    }
+
+    .fa-chart-line
+    {
+        font-size: 22px;
+        margin-left: 18%;
+        margin-top: 5%;
+    }
+
+    .lodge-container2
+    {
+        justify-content: space-around;
+        width: 80%;
+        max-width: 80%;
+        height: 88%;
+        margin: auto;
+    }
+
+    .lodge-img2
+    {
+        width: 280px;
+        height: 160px;
+    }
+
+    .lodge-img2 img
+    {
+        width: 110px;
+        height: 160px;
+    }
+
+    .lodge-img2 figcaption
+    {
+        height: 160px;
+        width: 170px;
+    } 
+
+    .lodge-img2 .title
+    {
+        font-size: 16px;
+    }
+
+    .lodge-img2 .lodge-rate
+    {
+        margin: 50px 0 0 10px;
     }
 
 
