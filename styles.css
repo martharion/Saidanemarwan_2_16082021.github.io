@@ -11,7 +11,7 @@
 
 /* Desktop common */
 
-@media all and (min-device-width: 768px)
+@media screen and (min-device-width: 768px)
 {
     .search-button2
     {   
@@ -661,7 +661,7 @@ footer
 
     /* Responsive phones */
 
-@media all and (max-device-width: 767px)
+@media screen and (max-device-width: 767px)
 {
     /* Phone common */
 
@@ -1024,7 +1024,7 @@ footer
 
     /* Responsive tablets */
 
-@media all and (min-device-width: 768px) and (max-device-width: 1350px)
+@media screen and (min-device-width: 768px) and (max-width: 1350px)
 {
     /* Tablet common */
 
@@ -1387,5 +1387,27 @@ footer
     .act-img5 img
     {
         height: 145px;
+    }
+
+    /* Footer */
+
+    footer
+    {
+        height: 300px;
+    }
+
+    .footer1
+    {
+        margin-left: 25px;
+    }
+
+    .footer2
+    {
+        margin-left: 50px;
+    }
+
+    .footer3
+    {
+        margin-left: 50px;
     }
 }
