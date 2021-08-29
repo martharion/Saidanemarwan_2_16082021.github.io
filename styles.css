@@ -1031,7 +1031,7 @@ footer
     body
     {
         max-width: 750px;
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .center
@@ -1041,7 +1041,142 @@ footer
 
     .title
     {
-        font-size: 16px;
+        font-size: 17px;
     }
 
+    /* Header */
+
+    header
+    {
+        height: 500px;
+    }
+
+        /* Banner */
+
+    .banner
+    {
+        height: 25%;
+    }
+
+    .logo
+    {
+        width: 115px;
+    }
+
+    .menu
+    {
+        margin-left: 15%;
+    }
+
+    .menu-link:hover
+    {
+        padding-top: 52px;
+    }
+
+        /* Explore */
+
+    #explore
+    {
+        height: 72.5%;
+        justify-content: flex-start;
+    }
+
+    .explore-h1
+    {
+        height: 10%;
+    }
+
+    .explore-h1 h1
+    {
+        font-size: 20px;
+    }
+
+    .explore-p
+    {
+        height: 12.5%;
+    }
+
+        /* Search */
+
+    .search
+    {
+        height: 15%;
+    }
+
+    .search-icon, .search-field, .search-button1
+    {
+        font-size: 18px;
+    }
+
+    .search-icon
+    {
+        width: 8%;
+    }
+
+    .search-field
+    {
+        width: 27.5%;
+        padding-left: 2%;
+    }
+
+    .search-button1
+    {
+        width: 17.5%;
+    }
+
+        /* Filters */
+
+    .filters
+    {
+        height: 35%;
+        margin-top: 26px;
+    }
+
+    label, .filters-button
+    {
+        font-size: 18px;
+    }
+
+    .label
+    {
+        width: 8%;
+        padding-top: 7%;
+    }
+
+    .filters-box
+    {
+        width: 70%;
+    }
+
+    .filters-box form
+    {
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    .button1, .button2, .button3, .button4
+    {
+        height: 45px;
+    }
+
+    .filters-button
+    {
+        height: 45px;
+        padding: 0 15px 0 47px;
+    }
+
+    .filters .fas
+    {
+        padding: 13px 13px;
+    }
+
+        /* Information */
+
+    .information
+    {
+        margin-top: 26px;
+        height: 10%;
+    }
+
+    
 }
