@@ -1178,5 +1178,124 @@ footer
         height: 10%;
     }
 
-    
+    /* Main */
+
+    #lodging
+    {
+        height: 700px;
+    }
+
+    .lodge-box1
+    {
+        width: 47.5%;
+    }
+
+    .lodge-box2
+    {
+        width: 47.5%;
+    }
+
+        /* Section */
+
+    .lodge-box1 h2
+    {
+        font-size: 19px;
+    }
+
+    .lodge-container1
+    {
+        width: 92%;
+        height: 87%;
+        margin-top: 4%;
+    }
+
+    .lodge-img1
+    {
+        width: 140px;
+        height: 170px;
+    }
+
+    .lodge-img1 img
+    {
+        width: 140px;
+        height: 80px;
+    }
+
+    .lodge-img1 figcaption
+    {
+        height: 90px;
+        padding-left: 8px;
+    }
+
+    .lodge-img1 .title
+    {
+        font-size: 14px;
+    }
+
+    .lodge-img1 .lodge-price
+    {
+        font-size: 14px;
+    }
+
+    .lodge-img1 .lodge-rate
+    {
+        font-size: 11px;
+    }
+
+    .lodge-link
+    {
+        width: 100px;
+    }
+
+        /* Aside */
+
+    .lodge-box2 h2
+    {
+        font-size: 19px;
+    }
+
+    .fa-chart-line
+    {
+        font-size: 24px;
+    }
+
+    .lodge-container2
+    {
+        width: 80%;
+        height: 87%;
+    }
+
+    .lodge-img2
+    {
+        width: 268px;
+        height: 150px;
+    }
+
+    .lodge-img2 img
+    {
+        width: 100px;
+        height: 150px;
+    }
+
+    .lodge-img2 figcaption
+    {
+        width: 168px;
+        height: 150px;
+    } 
+
+    .lodge-img2 .title
+    {
+        font-size: 14px;
+    }
+
+    .lodge-img2 .lodge-price
+    {
+        font-size: 14px;
+    }
+
+    .lodge-img2 .lodge-rate
+    {
+        font-size: 12px;
+        margin: 55px 0 0 10px;
+    }
 }
