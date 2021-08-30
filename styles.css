@@ -21,7 +21,6 @@
     .lodge-box1, .lodge-box2
     {
     background-color: #F2F2F2;
-    border: 1px solid red;
     border-radius: 20px;
     }
 }
@@ -280,7 +279,6 @@ label, .filters-button
     height: 600px;
     justify-content: space-between;
     margin-top: 50px;
-    border: 1px solid black;
 }
 
 .lodge-box1
@@ -303,7 +301,6 @@ label, .filters-button
 
 .lodge-box1 h2
 {
-    border: 1px solid green;
     margin: 0;
     margin-left: 4%;
 }
@@ -314,7 +311,6 @@ label, .filters-button
     height: 70%;
     margin-left: 4%;
     margin-top: 3%;
-    border: 1px solid orange;
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
@@ -325,12 +321,12 @@ label, .filters-button
     display: flex;
     flex-direction: column;
     margin: 0;
-    border: 1px solid blue;
+    border: 4px solid #FFFFFF;
     width: 240px;
     height: 175px;
     border-radius: 20px;
     background-color: #FFFFFF;
-    box-shadow: 4px 4px 3px #FFFFFF;
+    box-shadow: 4px 4px 4px #F2F2F2;
 }
 
 .lodge-img1 img
@@ -348,31 +344,22 @@ label, .filters-button
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 0 0 20px 20px;
-    border: 1px solid green;
     padding-left: 10px;
-}
-
-.lodge-img1 .title
-{
-    border: 1px solid red;
 }
 
 .lodge-img1 .lodge-price
 {
     font-size: 16px;
-    border: 1px solid red;
 }
 
 .lodge-img1 .lodge-rate
 {
     font-size: 14px;
-    border: 1px solid red;
 }
 
 .lodge-link
 {
     width: 95px;
-    border: 1px solid green;
     font-weight: bold;
     margin: 4% 4%;
 }
@@ -381,14 +368,12 @@ label, .filters-button
 
 .lodge-box2 h2
 {
-    border: 1px solid green;
     margin: 0;
     margin-left: 8%;
 }
 
 .fa-chart-line
 {
-    border: 1px solid green;
     font-size: 27px;
     margin-left: 20%;
 }
@@ -400,19 +385,18 @@ label, .filters-button
     justify-content: space-between;
     width: 80%;
     height: 82%;
-    border: 1px solid orange;
     margin: 6.5% 0 0 8%;
 }
 
 .lodge-img2
 {
     margin: 0;
-    border: 1px solid blue;
     width: 320px;
     height: 130px;
     background-color: #FFFFFF;
     border-radius: 20px;
-    box-shadow: 4px 4px 3px #FFFFFF;
+    border: 4px solid #FFFFFF;
+    box-shadow: 4px 4px 4px #F2F2F2;
 }
 
 .lodge-img2 img
@@ -425,7 +409,6 @@ label, .filters-button
 
 .lodge-img2 figcaption
 {
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     height: 130px;
@@ -436,21 +419,18 @@ label, .filters-button
 .lodge-img2 .title
 {
     width: 140px;
-    border: 1px solid red;
     margin: 10px 0 0 10px;
 }
 
 .lodge-img2 .lodge-price
 {
     font-size: 16px;
-    border: 1px solid red;
     margin: 10px 0 0 10px;
 }
 
 .lodge-img2 .lodge-rate
 {
     font-size: 14px;
-    border: 1px solid red;
     margin: 25px 0 0 10px;
 }
 
