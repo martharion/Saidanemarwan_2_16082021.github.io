@@ -77,7 +77,6 @@ header
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid black;
 }
 
     /* Banner */
@@ -85,48 +84,34 @@ header
 .banner
 {
     height: 32.5%;
-    border: 1px solid red;
     justify-content: space-between;
     align-items: center;
 }
 
-.banner p
-{
-    border: 1px solid orange;
-}
-
 .logo
 {
-    width: 110px;
+    width: 120px;
 }
 
 .menu
 {
-    border: 1px solid orange;
     margin-left: 56%;
-}
-
-.sign
-{
-    border: 1px solid orange;
 }
 
 .menu-link
 {
-    border: 1px solid green;
     padding: 0 35px 0 35px;
 }
 
 .menu-link:hover
 {
-    border-top: 3px solid #0065FC;
+    border-top: 4px solid #0065FC;
     padding-top: 55px;
     color: #0065FC;
 }
 
 .sign-in
 {
-    border: 1px solid green;
     font-weight: bold;
     color: #0065FC;
 }
@@ -135,17 +120,15 @@ header
 
 #explore
 {
-    height: 62.5%;
-    border: 1px solid red;
+    height: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .explore-h1
 {
-    border: 1px solid blue;
-    height: 15%;
+    height: 13%;
 }
 
 .explore-h1 h1
@@ -156,7 +139,6 @@ header
 
 .explore-p
 {
-    border: 1px solid blue;
     height: 15%;
 }
 
@@ -169,8 +151,7 @@ header
 
 .search
 {
-    border: 1px solid blue;
-    height: 17.5%;
+    height: 20%;
 }
 
 .search form
@@ -214,7 +195,7 @@ header
 
 .filters
 {
-    border: 1px solid blue;
+    margin-top: 23px;
     height: 17.5%;
 }
 
@@ -226,14 +207,12 @@ label, .filters-button
 
 .label
 {
-    border: 1px solid green;
     width: 4.5%;
     padding-top: 0.80%;
 }
 
 .filters-box
 {
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -246,7 +225,6 @@ label, .filters-button
 
 .button1, .button2, .button3, .button4
 {
-    border: 1px solid orange;
     margin-left: 4%;
 }
 
@@ -271,7 +249,7 @@ label, .filters-button
     color: #0065FC;
     background-color: #DEEBFF;
     font-size: 16px;
-    padding: 11px 11px;
+    padding: 14px 12px;
     border-radius: 20px;
     position: absolute;
 }
@@ -280,7 +258,7 @@ label, .filters-button
 
 .information
 {
-    border: 1px solid blue;
+    margin-top: 20px;
     height: 15%;
     align-items: center;
 }
@@ -705,6 +683,8 @@ footer
     {
         margin: 0;
         width: 350px;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 7px;
         order: 2;
     }
 
@@ -716,7 +696,7 @@ footer
     .menu-link:hover
     {
         border-bottom: 3px solid #0065FC;
-        padding-bottom: 10px;
+        padding-bottom: 7px;
     }
 
         /* Explore */
@@ -739,6 +719,7 @@ footer
 
     .explore-p
     {
+        margin-top: 10px;
         height: 7%;
     }
 
@@ -746,6 +727,7 @@ footer
 
     .search
     {
+        margin-top: 25px;
         height: 10%;
     }
 
@@ -786,6 +768,7 @@ footer
 
     .filters
     {
+        margin-top: 45px;
         flex-direction: column;
         flex-wrap: wrap;
         height: 50%;
@@ -809,7 +792,7 @@ footer
 
     .button1, .button2, .button3, .button4
     {
-        height: 60px;
+        height: 50px;
         margin: 0;
     }
 
@@ -825,7 +808,8 @@ footer
 
     .filters .fas
     {
-        padding: 20px 18px;
+        font-size: 17px;
+        padding: 16px 14px;
     }
 
         /* Information */
@@ -1167,7 +1151,7 @@ footer
 
     .filters .fas
     {
-        padding: 13px 13px;
+        padding: 14px 13px;
     }
 
         /* Information */
