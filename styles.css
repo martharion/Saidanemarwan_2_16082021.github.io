@@ -11,7 +11,7 @@
 
 /* Desktop common */
 
-@media screen and (min-device-width: 768px)
+@media screen and (min-device-width: 430px)
 {
     .search-button2
     {   
@@ -601,390 +601,581 @@ footer
 
 /* Responsive Design */
 
-    /* Responsive phones */
+    /* Responsive desktops */
 
-@media screen and (max-device-width: 767px)
+@media screen and (max-width: 1280px)
 {
-    /* Phone common */
-
     body
     {
-        max-width: 375px;
-        font-size: 18px;
+        width: 100%;
+        font-size: 17px;
     }
 
     .center
     {
-        max-width: 350px;
+        width: 90%;
+        max-width: 90%;
     }
-    
+
     .title
     {
-        font-size: 18px;
+        font-size: 17px;
     }
-    
+
     /* Header */
 
     header
     {
-        height: 710px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
         /* Banner */
 
     .banner
     {
-        height: 17.5%;
-        flex-wrap: wrap;
+        height: 32.5%;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .logo
     {
-        width: 80px;
+        width: 120px;
     }
 
     .menu
     {
-        margin: 0;
-        width: 350px;
-        border-bottom: 3px solid #F2F2F2;
-        padding-bottom: 7px;
-        order: 2;
+        margin-left: 50%;
+        display: flex;
+        flex-direction: row;
     }
 
-    .sign
+    .menu-link
     {
-        order: 1;
+        padding: 0 35px 0 35px;
     }
 
     .menu-link:hover
     {
-        border-bottom: 3px solid #0065FC;
-        padding-bottom: 7px;
+        border-top: 4px solid #0065FC;
+        padding-top: 55px;
+        color: #0065FC;
+    }
+
+    .sign-in
+    {
+        font-weight: bold;
+        color: #0065FC;
     }
 
         /* Explore */
 
     #explore
     {
-        height: 80%;
-        justify-content: space-evenly;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .explore-h1
     {
-        height: 10%;
+        height: 13%;
     }
 
     .explore-h1 h1
     {
-        font-size: 24px;
+        font-size: 22px;
+        margin: 0;
     }
 
     .explore-p
     {
-        margin-top: 10px;
-        height: 7%;
+        height: 15%;
+    }
+
+    .explore-p p
+    {
+        margin: 0;
     }
 
         /* Search */
 
     .search
     {
-        margin-top: 25px;
-        height: 10%;
+        height: 20%;
+    }
+
+    .search form
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
 
     .search-icon, .search-field, .search-button1
     {
-        font-size: 21px;
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        font-weight: bold;
     }
 
     .search-icon
     {
-        width: 16%;
+        border: 1px solid #F2F2F2;
+        width: 6%;
+        border-radius: 15px 0 0 15px;
     }
 
     .search-field
     {
-        width: 70%;
-        padding-left: 2.5%;
+        border: 1px solid #F2F2F2;
+        width: 23%;
+        padding-left: 1%;
     }
 
     .search-button1
     {
-        display: none;
-    }
-
-    .search-button2
-    {   
         border: 1px solid #0065FC;
-        width: 19%;
+        width: 12%;
         color: #FFFFFF;
         background-color: #0065FC;
-        border-radius: 15px;
-        font-size: 22px;
-        position: relative;
-        right: 5px;
+        border-radius: 0 15px 15px 0;
     }
 
         /* Filters */
 
     .filters
     {
-        margin-top: 45px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 50%;
+        margin-top: 23px;
+        height: 17.5%;
     }
 
     label, .filters-button
     {
         font-size: 18px;
+        font-weight: bold;
+    }
+
+    .label
+    {
+        width: 4.5%;
+        padding-top: 0.80%;
     }
 
     .filters-box
     {
-        height: 84.5%;
-        margin-top: 15px;
+        width: 100%;
     }
 
     .filters-box form
     {
-        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
 
     .button1, .button2, .button3, .button4
-    {
-        height: 50px;
-        margin: 0;
-    }
-
-    .button2
     {
         margin-left: 4%;
     }
 
     .filters-button
     {
-        margin-left: 13px;
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        height: 100%;
+        background-color: #FFFFFF;
+        border: 3px solid #F2F2F2;
+        border-radius: 20px;
+        padding: 0 15px 0 45px;
+    }
+
+    .filters-button:hover
+    {
+        color: #FFFFFF;
+        background-color: #DEEBFF;
     }
 
     .filters .fas
     {
-        font-size: 17px;
-        padding: 16px 14px;
+        color: #0065FC;
+        background-color: #DEEBFF;
+        font-size: 16px;
+        padding: 14px 12px;
+        border-radius: 20px;
+        position: absolute;
     }
 
         /* Information */
 
     .information
     {
-        height: 8%;
-    }
-
-    .information p
-    {
-        font-size: 16px;
+        margin-top: 20px;
+        height: 15%;
+        align-items: center;
     }
 
     .information .fas
     {
         font-size: 12px;
-        padding: 4px 8px;
-        margin-left: 7px;
-        margin-bottom: 8px;
+        color: #0065FC;
+        border: 2px solid #F2F2F2;
+        border-radius: 20px;
+        padding: 6px 10px;
+        margin-right: 15px;
     }
 
     /* Main */
 
     #lodging
     {
-        height: 1970px;
-        flex-direction: column;
+        height: 600px;
         justify-content: space-between;
-    }
-
-    .lodge-box2
-    {
-        background-color: #F2F2F2;
+        margin-top: 50px;
     }
 
     .lodge-box1
     {
-        width: 100%;
-        height: 1410px;
-        order: 2;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding-top: 4%;
     }
 
     .lodge-box2
     {
-        width: 100%;
-        height: 510px;
-        order: 1;
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        padding-top: 4%;
     }
 
         /* Section */
 
     .lodge-box1 h2
     {
-        font-size: 22px;
+        margin: 0;
+        margin-left: 4%;
+        font-size: 20px;
     }
 
     .lodge-container1
     {
         width: 92%;
-        height: 95%;
+        height: 80%;
+        margin-left: 4%;
+        margin-top: 3%;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
     }
 
     .lodge-img1
     {
-        width: 320px;
-        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border: 4px solid #FFFFFF;
+        width: 245px;
+        height: 130px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 4px 4px 4px #F2F2F2;
     }
 
     .lodge-img1 img
     {
-        width: 320px;
-        height: 110px;
+        width: 245px;
+        height: 70px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
     }
 
     .lodge-img1 figcaption
     {
-        height: 90px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 0 0 20px 20px;
+        padding-left: 10px;
+    }
+
+    .lodge-img1 .lodge-price
+    {
+        font-size: 16px;
+    }
+
+    .lodge-img1 .lodge-rate
+    {
+        font-size: 14px;
     }
 
     .lodge-link
     {
-        width: 110px;
+        width: 100px;
+        font-weight: bold;
+        margin: 4% 4%;
     }
 
         /* Aside */
 
     .lodge-box2 h2
     {
-        font-size: 22px;
-        margin-top: 2.5%;
+        margin: 0;
+        margin-left: 8%;
+        font-size: 20px;
     }
 
     .fa-chart-line
     {
         font-size: 22px;
-        margin-left: 18%;
-        margin-top: 2.5%;
+        margin-left: 20%;
     }
 
     .lodge-container2
     {
-        justify-content: space-around;
-        width: 80%;
-        max-width: 80%;
-        height: 88%;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 85%;
+        height: 82%;
+        margin: 6.5% 0 0 8%;
     }
 
     .lodge-img2
     {
-        width: 280px;
-        height: 120px;
+        margin: 0;
+        width: 274px;
+        height: 130px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        border: 4px solid #FFFFFF;
+        box-shadow: 4px 4px 4px #F2F2F2;
     }
 
     .lodge-img2 img
     {
         width: 110px;
-        height: 120px;
+        height: 130px;
+        border-radius: 20px 0 0 20px;
+        object-fit: cover;
     }
 
     .lodge-img2 figcaption
     {
-        width: 170px;
-        height: 120px;
+        display: flex;
+        flex-direction: column;
+        width: 164px;
+        height: 130px;
+        border-radius: 0 20px 20px 0;
     } 
 
     .lodge-img2 .title
     {
+        width: 140px;
+        margin: 10px 0 0 10px;
         font-size: 16px;
+    }
+
+    .lodge-img2 .lodge-price
+    {
+        font-size: 16px;
+        margin: 10px 0 0 10px;
     }
 
     .lodge-img2 .lodge-rate
     {
-        margin: 15px 0 0 10px;
+        font-size: 14px;
+        margin: 25px 0 0 10px;
     }
 
     /* Section */
 
     #activities
     {
-        height: 1210px;
+        height: 500px;
+        margin-top: 50px;
     }
 
     .act-box
     {
-        height: 1210px;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .act-box h2
+    {
+        margin: 0;
     }
 
     .act-container
     {
-        height: 1155px;
-        flex-direction: column;
+        width: 100%;
+        height: 450px;
+        justify-content: space-between;
     }
 
     .act-grp
     {
-        width: 350px;
-        height: 367px;
+        width: 215px;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .act-container figure
     {
-        width: 350px;
-        height: 170px;
+        margin: 0;
+        width: 215px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 4px #F2F2F2;
     }
 
     .act-container figure img
     {
-        width: 350px;
-        height: 135px;
+        width: 215px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
     }
 
     .act-container figcaption
     {
-        height: 35px;
+        height: 40px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .act-container .title
+    {
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .act-img1
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .act-img1 img
+    {
+        height: 410px;
+    }
+
+    .act-img2
+    {
+        display: flex;
+        flex-direction: column;
+        height: 255px;
+    }
+
+    .act-img2 img
+    {
+        height: 215px;
+    }
+
+    .act-img3
+    {
+        display: flex;
+        flex-direction: column;
+        height: 162px;
+    }
+
+    .act-img3 img
+    {
+        height: 122px;
+    }
+
+    .act-img4
+    {
+        display: flex;
+        flex-direction: column;
+        height: 172px;
+    }
+
+    .act-img4 img
+    {
+        height: 132px;
+    }
+
+    .act-img5
+    {
+        display: flex;
+        flex-direction: column;
+        height: 245px;
+    }
+
+    .act-img5 img
+    {
+        height: 205px;
     }
 
     /* Footer */
 
     footer
     {
-        height: 510px;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 100%;
+        height: 230px;
+        background-color: #F2F2F2;
+        margin-top: 50px;
     }
 
     .footer1, .footer2, .footer3
     {
-        height: 150px;
-        margin: 0;
-        padding-left: 15px;
-        margin-left: 0;
+        margin-top: 25px;
     }
-}
+
+    .footer1 ul, .footer2 ul, .footer3 ul
+    {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer1 li, .footer2 li, .footer3 li
+    {
+        margin-bottom: 10px;
+    }
+
+    .footer1
+    {
+        margin-left: 50px;
+    }
+
+    .footer2
+    {
+        margin-left: 100px;
+    }
+
+    .footer3
+    {
+        margin-left: 150px;
+    }
+}    
 
     /* Responsive tablets */
 
-@media screen and (min-device-width: 768px) and (max-width: 1350px)
+@media screen and (max-width: 1024px)
 {
     /* Tablet common */
 
     body
     {
-        max-width: 750px;
+        width: 100%;
         font-size: 17px;
     }
 
     .center
     {
-        max-width: 700px;
+        width: 90%;
+        max-width: 90%;
     }
 
     .title
@@ -996,7 +1187,8 @@ footer
 
     header
     {
-        height: 500px;
+        height: 450px;
+        justify-content: space-between;
     }
 
         /* Banner */
@@ -1013,7 +1205,7 @@ footer
 
     .menu
     {
-        margin-left: 15%;
+        margin-left: 35%;
     }
 
     .menu-link:hover
@@ -1025,13 +1217,13 @@ footer
 
     #explore
     {
-        height: 72.5%;
+        height: 70%;
         justify-content: flex-start;
     }
 
     .explore-h1
     {
-        height: 10%;
+        height: 12.5%;
     }
 
     .explore-h1 h1
@@ -1041,14 +1233,14 @@ footer
 
     .explore-p
     {
-        height: 12.5%;
+        height: 15%;
     }
 
         /* Search */
 
     .search
     {
-        height: 15%;
+        height: 22.5%;
     }
 
     .search-icon, .search-field, .search-button1
@@ -1076,7 +1268,7 @@ footer
 
     .filters
     {
-        height: 35%;
+        height: 22.5%;
         margin-top: 26px;
     }
 
@@ -1087,19 +1279,18 @@ footer
 
     .label
     {
-        width: 8%;
-        padding-top: 7%;
+        width: 7%;
+        padding-top: 2.3%;
     }
 
     .filters-box
     {
-        width: 70%;
+        width: 85%;
     }
 
     .filters-box form
     {
-        flex-wrap: wrap;
-        align-content: space-around;
+        align-items: center;
     }
 
     .button1, .button2, .button3, .button4
@@ -1123,7 +1314,7 @@ footer
     .information
     {
         margin-top: 26px;
-        height: 10%;
+        height: 15%;
     }
 
     /* Main */
@@ -1147,7 +1338,8 @@ footer
 
     .lodge-box1 h2
     {
-        font-size: 19px;
+        font-size: 21px;
+        margin-left: 6%;
     }
 
     .lodge-container1
@@ -1159,35 +1351,35 @@ footer
 
     .lodge-img1
     {
-        width: 140px;
+        width: 172px;
         height: 170px;
     }
 
     .lodge-img1 img
     {
-        width: 140px;
-        height: 80px;
+        width: 172px;
+        height: 95px;
     }
 
     .lodge-img1 figcaption
     {
-        height: 90px;
+        height: 75px;
         padding-left: 8px;
     }
 
     .lodge-img1 .title
     {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .lodge-img1 .lodge-price
     {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .lodge-img1 .lodge-rate
     {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .lodge-link
@@ -1199,12 +1391,13 @@ footer
 
     .lodge-box2 h2
     {
-        font-size: 19px;
+        font-size: 21px;
     }
 
     .fa-chart-line
     {
         font-size: 24px;
+        margin-left: 30%;
     }
 
     .lodge-container2
@@ -1215,35 +1408,35 @@ footer
 
     .lodge-img2
     {
-        width: 268px;
+        width: 335px;
         height: 150px;
     }
 
     .lodge-img2 img
     {
-        width: 100px;
+        width: 135px;
         height: 150px;
     }
 
     .lodge-img2 figcaption
     {
-        width: 168px;
+        width: 200px;
         height: 150px;
     } 
 
     .lodge-img2 .title
     {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .lodge-img2 .lodge-price
     {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .lodge-img2 .lodge-rate
     {
-        font-size: 12px;
+        font-size: 13px;
         margin: 55px 0 0 10px;
     }
 
@@ -1273,18 +1466,18 @@ footer
 
     .act-grp
     {
-        width: 340px;
+        width: 431px;
         height: 365px;
     }
 
     .act-container figure
     {
-        width: 340px;
+        width: 431px;
     }
 
     .act-container figure img
     {
-        width: 340px;
+        width: 431px;
     }
 
     .act-img1
@@ -1346,16 +1539,450 @@ footer
 
     .footer1
     {
-        margin-left: 25px;
+        margin-left: 10%;
     }
 
     .footer2
     {
-        margin-left: 50px;
+        margin-left: 10%;
     }
 
     .footer3
     {
-        margin-left: 50px;
+        margin-left: 10%;
     }
+}
+
+    /* Responsive phones */
+
+@media screen and (max-device-width: 430px)
+{
+    /* Phone common */
+
+    body
+    {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .center
+    {
+        width: 90%;
+        max-width: 90%;
+        margin: auto;
+    }
+    
+    .title
+    {
+        font-size: 18px;
+    }
+    
+    /* Header */
+
+    header
+    {
+        height: 710px;
+    }
+
+        /* Banner */
+
+    .banner
+    {
+        height: 25%;
+        flex-wrap: wrap;
+    }
+
+    .logo
+    {
+        width: 160px;
+    }
+
+    .menu
+    {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+        order: 2;
+    }
+
+    .sign
+    {
+        order: 1;
+        margin-left: 50%;
+    }
+
+    .menu-link
+    {
+        width: 50%;
+        text-align: center;
+    }
+
+    .menu-link:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
+        /* Explore */
+
+    #explore
+    {
+        height: 70%;
+        justify-content: flex-start;
+    }
+
+    .explore-h1
+    {
+        height: 10%;
+    }
+
+    .explore-h1 h1
+    {
+        font-size: 30px;
+    }
+
+    .explore-p
+    {
+        margin-top: 10px;
+        height: 7%;
+    }
+
+        /* Search */
+
+    .search
+    {
+        margin-top: 25px;
+        height: 15%;
+    }
+
+    .search-icon, .search-field, .search-button1
+    {
+        font-size: 28px;
+    }
+
+    .search-icon
+    {
+        width: 10%;
+    }
+
+    .search-field
+    {
+        width: 82%;
+        padding-left: 4%;
+    }
+
+    .search-button1
+    {
+        display: none;
+    }
+
+    .search-button2
+    {   
+        border: 1px solid #0065FC;
+        width: 8%;
+        color: #FFFFFF;
+        background-color: #0065FC;
+        border-radius: 15px;
+        font-size: 28px;
+        position: relative;
+        right: 5px;
+    }
+
+        /* Filters */
+
+    .filters
+    {
+        margin-top: 25px;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 60%;
+    }
+
+    label, .filters-button
+    {
+        font-size: 24px;
+    }
+
+    .label
+    {
+        padding: 0;
+        height: 5%;
+        width: 100%;
+    }
+
+    .filters-box
+    {
+        height: 95%;
+        width: 100%;
+    }
+
+    .filters-box form
+    {
+        flex-wrap: wrap;
+    }
+
+    .button1, .button2, .button3, .button4
+    {
+        height: 25%;
+        width: 35%;
+        margin: 0;
+    }
+
+    .button2
+    {
+        margin-left: 2%;
+    }
+
+    .filters-button
+    {
+        margin-left: 13px;
+    }
+
+    .filters .fas
+    {
+        font-size: 17px;
+        padding: 14px 12px;
+    }
+
+        /* Information */
+
+    .information
+    {
+        height: 8%;
+    }
+
+    .information p
+    {
+        font-size: 28px;
+    }
+
+    .information .fas
+    {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin-left: 7px;
+        margin-bottom: 8px;
+    }
+
+    /* Main */
+
+    #lodging
+    {
+        height: 1970px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .lodge-box2
+    {
+        background-color: #F2F2F2;
+    }
+
+    .lodge-box1
+    {
+        width: 100%;
+        height: 1410px;
+        order: 2;
+    }
+
+    .lodge-box2
+    {
+        width: 100%;
+        height: 510px;
+        order: 1;
+    }
+
+        /* Section */
+
+    .lodge-box1 h2
+    {
+        font-size: 28px;
+    }
+
+    .lodge-container1
+    {
+        width: 92%;
+        height: 95%;
+        flex-direction: column;
+    }
+
+    .lodge-img1
+    {
+        width: 813px;
+        height: 180px;
+    }
+
+    .lodge-img1 img
+    {
+        width: 813px;
+        height: 120px;
+    }
+
+    .lodge-img1 figcaption
+    {
+        height: 60px;
+        padding-left: 20px;
+    }
+
+    .lodge-img1 .title
+    {
+        font-size: 18px;
+    }
+
+    .lodge-img1 .lodge-price
+    {
+        font-size: 18px;
+    }
+
+    .lodge-img1 .lodge-rate
+    {
+        font-size: 16px;
+    }
+
+    .lodge-link
+    {
+        width: 200px;
+    }
+
+        /* Aside */
+
+    .lodge-box2 h2
+    {
+        font-size: 28px;
+        margin-top: 1%;
+    }
+
+    .fa-chart-line
+    {
+        font-size: 28px;
+        margin-left: 50%;
+        margin-top: 1.5%;
+    }
+
+    .lodge-container2
+    {
+        justify-content: space-around;
+        width: 80%;
+        max-width: 80%;
+        height: 88%;
+        margin: auto;
+    }
+
+    .lodge-img2
+    {
+        width: 705px;
+        height: 120px;
+    }
+
+    .lodge-img2 img
+    {
+        width: 155px;
+        height: 120px;
+    }
+
+    .lodge-img2 figcaption
+    {
+        width: 550px;
+        height: 120px;
+    } 
+
+    .lodge-img2 .title
+    {
+        font-size: 18px;
+    }
+
+    .lodge-img1 .lodge-price
+    {
+        font-size: 18px;
+    }
+
+    .lodge-img2 .lodge-rate
+    {
+        font-size: 16px;
+        margin: 15px 0 0 10px;
+    }
+
+    /* Section */
+
+    #activities
+    {
+        height: 1210px;
+    }
+
+    .act-box h2
+    {
+        font-size: 28px;
+    }
+
+    .act-box
+    {
+        height: 1210px;
+    }
+
+    .act-container
+    {
+        height: 1155px;
+        flex-direction: column;
+    }
+
+    .act-grp
+    {
+        width: 882px;
+        height: 367px;
+    }
+
+    .act-container figure
+    {
+        width: 882px;
+        height: 170px;
+    }
+
+    .act-container figure img
+    {
+        width: 882px;
+        height: 135px;
+    }
+
+    .act-container figcaption
+    {
+        height: 35px;
+    }
+
+    .act-container .title
+    {
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 24px;
+    }
+
+    /* Footer */
+
+    footer
+    {
+        height: 510px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer .title
+    {
+        font-size: 22px;
+    }
+
+    footer a
+    {
+        font-size: 22px;
+    }
+
+    .footer1, .footer2, .footer3
+    {
+        height: 150px;
+        margin: 0;
+        padding-left: 15px;
+        margin-left: 320px;
+    }
+
 }
